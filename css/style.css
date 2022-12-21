@@ -1,0 +1,12 @@
+header {
+  border-bottom-style: solid;
+  background-color: #ffffff;
+}
+main {
+  background-color: #e5e5e5;
+}
+footer {
+  background-color: #2f303a;
+}
+/* nie działa
+. span web { } */
