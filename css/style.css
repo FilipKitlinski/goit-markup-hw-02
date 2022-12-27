@@ -1,12 +1,8 @@
-header {
-  border-bottom-style: solid;
-  background-color: #ffffff;
-}
-main {
-  background-color: #e5e5e5;
-}
-footer {
-  background-color: #2f303a;
+:root {
+  --main-bg-color: #e5e5e5;
+  --header-bg-color: #ffffff;
+  --footer-bg-color: #2f303a;
+  --blue-hover: #2196f3;
 }
 body {
   font-family: Roboto;
@@ -16,8 +12,17 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
 }
-/* nie działa
-. span web { } */
+header {
+  border-bottom-style: solid;
+  background-color: var(--header-bg-color);
+}
+main {
+  background-color: var(--main-bg-color);
+}
+footer {
+  background-color: var(--footer-bg-color);
+}
+
 .webStudio {
   font-family: Raleway;
   font-size: 26px;
@@ -27,7 +32,7 @@ body {
   text-align: left;
 }
 .web {
-  color: #2196f3;
+  color: var(--blue-hover);
 }
 .studio {
   color: #000000;
@@ -63,7 +68,7 @@ p {
   letter-spacing: 0.03em;
   text-align: left;
 }
-.adresStopka {
+.adressFooter {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -79,16 +84,19 @@ ul {
   list-style-type: none;
 }
 button:hover {
-  background-color: #2196f3;
+  background-color: var(--blue-hover);
   color: white;
   border: none;
 }
-.bialyLink {
+.whiteLink {
   color: #ffffff99;
 }
-.szaryLink {
+.greyLink {
   color: #757575;
 }
-.czarnyLink {
+.blackLink {
   color: #212121;
+}
+.blueHoverLink:hover {
+  color: var(--blue-hover);
 }
